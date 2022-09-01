@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1000px;
+    max-height: 2000px;
+    height: 100%;
+
+}
+#gameboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    height: 600px;
+    width: 600px;
+}
+.sqr {
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sqr:hover {
+    background-color: darkslategrey;
+}
