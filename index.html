@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div id="container">
-        <div id="gameboard">
-            <div onclick="changeColor()" class="sqr" id="sqr1"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr2"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr3"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr4"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr5"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr6"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr7"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr8"></div>
-            <div onclick="changeColor()" class="sqr" id="sqr9"></div>
-        </div>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
     </div>
- 
-    
-    <script src="script.js"></script>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
 </body>
 </html>
